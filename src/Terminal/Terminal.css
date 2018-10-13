@@ -1,0 +1,50 @@
+/* Terminal emulator */
+
+.terminal {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  display: block;
+  margin: auto;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 30px;
+  clear: both;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.terminal-title-bar {
+  padding: 5px 0;
+  font-size: 1em;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
+  background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
+  box-shadow: rgba(255, 255, 255, 0.7) 0px 1px;
+  border-bottom: #6a6a6a 1px solid;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.terminal-body {
+  padding: 5px 10px;
+  height: 300px;
+  overflow-y: auto;
+  word-break: normal;
+  background-color: #000;
+  color: #fff;
+}
+
+.prompt {
+  color: #00ff00;
+}
+
+.terminal1::after {
+  content: "▋";
+  color: #fff;
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}

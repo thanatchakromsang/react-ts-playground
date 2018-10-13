@@ -1,5 +1,5 @@
-import * as React from 'react';
-import './Button.css';
+import * as React from "react";
+import "./Button.css";
 export interface Props {
   /** this dictates what the button will say  */
   label: string;
@@ -15,7 +15,7 @@ export interface Props {
 const noop = () => {}; // tslint:disable-line
 export const Button = (props: Props) => {
   const { label, onClick, disabled = false } = props;
-  const disabledclass = disabled ? 'Button_disabled' : '';
+  const disabledclass = disabled ? "Button_disabled" : "";
   return (
     <div
       className={`Button ${disabledclass}`}
